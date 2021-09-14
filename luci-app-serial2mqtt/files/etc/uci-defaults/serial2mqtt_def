@@ -1,0 +1,12 @@
+#!/bin/sh
+
+uci -q batch <<-EOF >/dev/null
+	delete ucitrack.@serial2mqtt_def[-1]
+	add ucitrack serial2mqtt
+	set ucitrack.@serial2mqtt[-1].init=serial2mqtt_init
+	commit ucitrack
+EOF
+
+rm -f /tmp/luci-indexcache
+exit 0
+

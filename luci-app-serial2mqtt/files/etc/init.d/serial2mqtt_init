@@ -1,0 +1,38 @@
+#!/bin/sh /etc/rc.common
+# Copyright (C) 2008-2014 OpenWrt.org
+
+START=100
+STOP=100
+
+
+USE_PROCD=1
+
+NAME=luci-app-serial2mqtt
+
+
+stop () {
+	echo "serial2mqtt stop. $date" >> ${NAME}.log
+	service_stop $PROG
+}
+
+
+start () {
+	echo "serial2mqtt ${NAME} start. $date" >> ${NAME}.log
+	start_service
+}
+
+
+restart () {
+	echo "restart ${NAME} serial2mqtt $date " >> ${NAME}.log
+	stop 
+	start
+}
+
+
+reload_service() {
+	local rv=0
+	ubus call "${NAME}" reload || rv=1
+	restart
+	return $rv
+}
+

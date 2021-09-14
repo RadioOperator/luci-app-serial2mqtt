@@ -1,0 +1,101 @@
+##################################################
+# This 'default' section is for future use only.
+
+config default 'default'
+
+# MQTT Settings
+	option mqtt_enable '1'
+	option mqtt_hostname 'broker.hivemq.com'
+	option mqtt_hostport '1883'
+	option mqtt_topic_pub 'test/message'
+	option mqtt_topic_sub 'test/message'
+	option mqtt_login_enable '0'
+	option mqtt_login_username 'mqttLoginName01'
+	option mqtt_login_password '1234567890'
+	option mqtt_ssl_enable '0'
+	option mqtt_ssl_cafile '/usr/share/serial2mqtt/ssl/ca.crt'
+	option mqtt_ssl_crtfile '/usr/share/serial2mqtt/ssl/client.crt'
+	option mqtt_ssl_keyfile '/usr/share/serial2mqtt/ssl/client.key'
+
+# UART Settings
+	option uart_serial '/dev/ttyS0'
+	option uart_baudrate 'B115200'
+	option uart_databit 'CS8'
+	option uart_parity_check 'NONE'
+	option uart_stopbit '1'
+	option uart_reconnectInterval '1000'
+	option uart_idleTimeout '60000'
+
+# Data Settings
+	option data_uart_type 'uart_json_array'
+	option data_uart_format ''
+	option data_mqtt_type 'mqtt_json_array'
+	option data_mqtt_format ''
+	
+# Application
+	option app_priject 'Project Name'
+	option app_gateway_fw '1.2.34-5'
+	option app_gateway_mac '1a2b3c4d5e6f'
+	option app_remarks 'Remarks: '
+	
+# LOG Settings
+	option log_file 'log.serial2mqtt'
+	option log_level 'I'
+	option log_protocol true
+	option log_debug true
+	option log_useColors true
+	option log_mqtt false
+	option log_program false
+	option log_console false
+
+
+##################################################################
+# This 'working' section, maybe modified by luci-app-serial2mqtt.
+
+config working 'working'
+
+# MQTT Settings
+	option mqtt_enable '1'
+	option mqtt_hostname 'broker.hivemq.com'
+	option mqtt_hostport '1883'
+	option mqtt_topic_pub 'test/message'
+	option mqtt_topic_sub 'test/message'
+	option mqtt_login_enable '0'
+	option mqtt_login_username 'mqttLoginName01'
+	option mqtt_login_password '1234567890'
+	option mqtt_ssl_enable '0'
+	option mqtt_ssl_cafile '/usr/share/serial2mqtt/ssl/ca.crt'
+	option mqtt_ssl_crtfile '/usr/share/serial2mqtt/ssl/client.crt'
+	option mqtt_ssl_keyfile '/usr/share/serial2mqtt/ssl/client.key'
+
+# UART Settings
+	option uart_serial '/dev/ttyS0'
+	option uart_baudrate 'B115200'
+	option uart_databit 'CS8'
+	option uart_parity_check 'NONE'
+	option uart_stopbit '1'
+	option uart_reconnectInterval '1000'
+	option uart_idleTimeout '60000'
+
+# Data Settings
+	option data_uart_type 'uart_json_array'
+	option data_uart_format ''
+	option data_mqtt_type 'mqtt_json_array'
+	option data_mqtt_format ''
+	
+# Application
+	option app_priject 'Project Name'
+	option app_gateway_fw '1.2.34-5'
+	option app_gateway_mac '1a2b3c4d5e6f'
+	option app_remarks 'Remarks: '
+	
+# LOG Settings
+	option log_file 'log.serial2mqtt'
+	option log_level 'I'
+	option log_protocol true
+	option log_debug true
+	option log_useColors true
+	option log_mqtt false
+	option log_program false
+	option log_console false
+
