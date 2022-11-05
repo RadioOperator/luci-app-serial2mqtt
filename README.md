@@ -1,5 +1,5 @@
 # luci-app-serial2mqtt
-OpenWrt LuCI config template for [serial2mqtt](https://github.com/vortex314/serial2mqtt) and [serial2mqtt-openwrt](https://github.com/halfbakery/serial2mqtt-openwrt).
+OpenWrt LuCI config template for [openwrt-serial2mqtt](https://github.com/RadioOperator/openwrt-serial2mqtt), [serial2mqtt](https://github.com/vortex314/serial2mqtt) and [serial2mqtt-openwrt](https://github.com/halfbakery/serial2mqtt-openwrt).
 
 This project is not completed, it generates the openwrt config file only (serial2mqtt_cfg), not linked to the serial2mqtt yet.
 
